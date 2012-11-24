@@ -1,0 +1,193 @@
+@import url("reset.css");
+#Biography
+{
+text-align: left;
+width: 12em;
+padding-left: 12%;
+font-family: "rockwell", serif;
+}
+#BottomPadding
+{
+width:100%;
+display:inline-block;
+height:3em;
+}
+#FullHeader
+{
+border: 1px solid;
+border-color: black;
+}
+#Header
+{
+background-image: url('/images/header.jpg')
+}
+#MainTitle
+{
+    font-weight: bold;
+    font-size: large;
+}
+#NavList
+{
+
+list-style-type: none;
+border: 1px solid;
+border-color: black;
+height: 1.5em;
+background-color:#76000E;
+color: white;
+width: 100%;
+position: relative;
+
+}
+#NetworkingLinks
+{
+width:100%;
+display:inline-block;
+}
+#NetworkingList
+{
+background-color:white;
+border-radius: 15px;
+height: 35px;
+width:200px;
+padding:1%;
+}
+#PageWrapper
+{
+width: 98%;
+margin: 1% 3% 1% 1%;
+}
+#resume
+{
+width:100%;
+height:30em;
+}
+#TitleGroup
+{
+    margin: 1%;
+    padding: 1%;
+    border: 3px solid;
+    border-radius: 10px;
+    width:30%;
+    font-family: "rockwell", serif;
+    background-color: white;
+}
+a.NavLink
+{
+color:white;
+text-decoration: none;
+
+}
+a.NavLink:hover
+{
+color:white;
+text-decoration: underline;
+}
+aside
+{
+margin-top: 1%;
+float: left;
+border: 1px solid;
+border-radius: 15px;
+padding: 2%;
+text-align:center;
+width: 20%;
+-moz-box-shadow: 3px 3px 4px #000;
+-webkit-box-shadow: 3px 3px 4px #000;
+box-shadow: 3px 3px 4px #000;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+}
+div.PostWrapper
+{
+margin-top: 1%;
+margin-bottom: 1%;
+border: 1px solid;
+border-radius: 15px;
+padding: 2%;
+text-align:center;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+-moz-box-shadow: 3px 3px 4px #000;
+-webkit-box-shadow: 3px 3px 4px #000;
+box-shadow: 3px 3px 4px #000;
+}
+footer
+{
+width:98%;
+height: 1.5em;
+border: 5px solid;
+text-align:center;
+background-color: #76000E;
+color: white;
+position:fixed;
+margin-left:auto;
+margin-right:auto; 
+bottom:0;
+font-family: "rockwell", serif;
+}
+h4.PageTitle
+{
+font-size: larger;
+font-weight: bold;
+text-decoration: underline;
+}
+h5.ParagraphHeading
+{
+padding-top:2em;
+text-align: left;
+font-weight: bold;
+}
+img
+{
+width:120px;
+border: 2px solid;
+}
+li
+{
+float:left;
+padding-left:1%;
+}
+li.NavLink
+{
+width:20%;
+float:left;
+padding-left:5%;
+font-family: "rockwell", serif;
+}
+p.GeneralContent
+{
+text-align:left;
+}
+section
+{
+margin-top: 1%;
+margin-left: 26%;
+margin-bottom: 1%;
+border: 1px solid;
+border-radius: 15px;
+padding: 2% 2% 2% 2%;
+text-align:center;
+width: 69%;
+height: 100%;
+font-family: "rockwell", serif;
+-moz-box-shadow: 3px 3px 4px #000;
+-webkit-box-shadow: 3px 3px 4px #000;
+box-shadow: 3px 3px 4px #000;
+}
+td.PostBody
+{
+margin: 1em;
+}
+td.PostSubTitle
+{
+font-style:italic;
+}
+th.PostTitle
+{
+font-weight:bold;
+}

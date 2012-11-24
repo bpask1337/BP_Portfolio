@@ -1,0 +1,30 @@
+<h4 class="PageTitle">Tech Blog</h4>
+
+<% @posts.reverse.each do |post| %>
+<div class="PostWrapper">
+<table style="width:100%;">
+  <tr>
+    <th class="PostTitle" colspan="3"><%=h post.title %></th>
+  </tr>
+  <tr>
+    <td class="PostSubTitle" colspan="3"><%=h post.subtitle %></td>
+  </tr>
+  <tr><td colspan="3"><hr style="width:100%;" /></td></tr>
+  <tr>
+    <td class="PostBody" colspan="3"><%=
+  case when post.body.length>200 then post.body[0..200]+'...(continued)' else post.body end %></td>
+  </tr>
+  <tr><td colspan="3">&nbsp;</td></tr>
+  <tr>
+    <td><%= link_to 'Show', post %></td>
+    <%  if User.find_by_id(session[:user_id]) %>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+  </tr>
+</table>
+</div>
+<% end %>
+<%  if User.find_by_id(session[:user_id]) %>
+<%= link_to 'New post', new_post_path %>
+<% end %>

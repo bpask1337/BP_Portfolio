@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="https://plus.google.com/106721357554685357197" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Brad Paskewitz" />
+    <meta name="keywords" content="software developer, web developer, programmer, html5, html, ruby, java, rails, ruby on rails, css, dynamic, lehigh" />
+    <meta name="description" content="The Personal Website of Brad Paskewitz: Software Engineer and Web Developer" />
+    <meta name="robots" content="all" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      //JQuery Functions
+      $(document).ready(function(){
+
+        $('#LoadAbout').mouseover(function(){
+          $('#MainTitle').text('changeTest');
+        });
+       // $('li.NavLink > a').mouseover(function(){
+         // $(this).animate({fontSize: '110px', color: '#2E9ECE'});
+        //});
+       // NavLinks.attr
+       // NavLinks.text('hi');
+      });
+    </script>
+    <title>Brad Paskewitz: Professional Software Developer</title>
+    <%= stylesheet_link_tag '/stylesheets/style', :media => 'screen' %>
+  </head>
+  <body>
+    <div id="PageWrapper">
+      <header id ="Header">
+        <hgroup id="FullHeader">
+        <hgroup id="TitleGroup">
+          <h1 id="MainTitle">BradPaskewitz.com</h1>
+          <h4 id="SubTitle">The Personal Website of Bradford H. Paskewitz Jr.</h4>
+        </hgroup>
+        </hgroup>
+        <nav>
+        <ul id="NavList">
+        <li class="NavLink"><a class="NavLink" href="../../home">Home</a></li>
+        <li class="NavLink"><a class="NavLink" href="../../about">About</a></li>
+        <li class="NavLink"><a class="NavLink" href="../../posts">Blog</a></li>
+        <li class="NavLink"><a class="NavLink" href="../../contact">Contact</a></li>
+        </ul>
+        </nav>
+      </header>
+    <div id ="NoticeSection">
+    </div>
+    <aside>
+    <%= image_tag("profile.jpg", :alt=>"Profile Picture") %>
+    <p id="Biography">
+    My name is Brad Paskewitz. I am a software
+    engineer/ web developer situated in Santa Monica,
+    California. I have been writing code for over 7
+    years and recently completed my B.S. in Computer
+    Engineering at Lehigh University.
+    </p>
+    <hr></hr>
+    </aside>
+    <section id="PageContent">
+    <%= yield%>
+    </section>
+    <table style="width:100%" />
+    </div>
+    <div id="BottomPadding">
+    </div>
+    <footer>
+    <p>Copyright (c) 2012 Brad Paskewitz</p>
+    </footer>
+  </body>
+</html>

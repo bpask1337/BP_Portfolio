@@ -1,0 +1,22 @@
+<div class="PostWrapper">
+<table style="width:100%;">
+  <tr>
+    <th class="PostTitle" colspan="3"><%=h @post.title %></th>
+  </tr>
+  <tr>
+    <td class="PostSubTitle" colspan="3"><%=h @post.subtitle %></td>
+  </tr>
+  <tr><td colspan="3"><hr style="width:100%;" /></td></tr>
+  <tr>
+    <td class="PostBody" colspan="3"><%=h @post.body %></td>
+  </tr>
+  <tr><td colspan="3">&nbsp;</td></tr>
+  <tr>
+    <%  if User.find_by_id(session[:user_id]) %>
+    <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    <% end %>
+    <td><%= link_to 'Back', posts_path %></td>
+  </tr>
+</table>
+</div>
+
